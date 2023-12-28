@@ -163,3 +163,24 @@ DEL.addEventListener('click',()=>{
 })
 
 
+function buttonEffect(name){
+    name.addEventListener('mouseover',(event)=>{
+        event.target.style.cssText = 'background-color:#d5d4d3;font-size:50px;'
+    })
+    name.addEventListener('mouseout',(e)=>{
+        event.target.style.cssText = 'backgroud-color:white;font-size:30px;'
+    })
+}
+//hover effects
+numbers.forEach((num)=>{
+    buttonEffect(num);
+})
+
+operators.forEach((num)=>{
+    buttonEffect(num);
+})
+
+buttonEffect(equals);
+buttonEffect(DEL);
+buttonEffect(AC);
+
