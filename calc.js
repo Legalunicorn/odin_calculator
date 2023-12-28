@@ -165,7 +165,7 @@ DEL.addEventListener('click',()=>{
 
 function buttonEffect(name){
     name.addEventListener('mouseover',(event)=>{
-        event.target.style.cssText = 'background-color:#d5d4d3;font-size:50px;'
+        event.target.style.cssText = 'background-color:#d5d4d3;font-size:40px;color:#575652;'
     })
     name.addEventListener('mouseout',(e)=>{
         event.target.style.cssText = 'backgroud-color:white;font-size:30px;'
