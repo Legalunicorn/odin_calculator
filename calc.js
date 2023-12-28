@@ -71,7 +71,7 @@ numbers.forEach((num)=>{
     num.addEventListener('click',()=>{
         let numStr = num.textContent;
         //make sure its enough space
-        if (topRow.textContent.length<11){
+        if (topRow.textContent.length<13){
             // check if num1 or num2
             if (!operator){ //num1
                 //max 1 deci
@@ -90,7 +90,7 @@ numbers.forEach((num)=>{
        
         }
         else{
-
+            alert('Too many digits. DEL some.')
             console.log('too long')
         }
     })
